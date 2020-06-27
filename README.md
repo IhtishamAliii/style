@@ -6,7 +6,7 @@
 This Script Will Make Your Terminal Colorful And Customize With Your Name
 
 
-#Installation
+# Installation
 
 pkg update && pkg install git
 
