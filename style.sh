@@ -40,6 +40,9 @@ clear
 echo  "${cyan}${bt}"
 echo " ~ Please Wait Checking For Requirements"
 echo
+echo " ~ Installing Figlet"
+pkg install figlet -y > /dev/null 2>&1
+echo
 sleep 3
 ru=$PREFIX/bin/ruby
 if [ -f "$ru" ]; then
@@ -49,7 +52,7 @@ else
     echo " ~ Installing Ruby"
     sleep 2
     echo
-    pkg install ruby
+    pkg install ruby -y > /dev/null 2>&1
 fi
 echo
 lol=$PREFIX/bin/lolcat
@@ -60,7 +63,7 @@ else
     echo " ~ Installing LoLCat"
     sleep 2
     echo
-    gem install lolcat
+    gem install lolcat -y > /dev/null 2>&1
 fi
 echo
 figl=$PREFIX/bin/figlet
@@ -71,7 +74,8 @@ else
     echo " ~ Installing Figlet"
     sleep 2
     echo
-    gem install figlet
+    gem install figlet -y > /dev/null 2>&1
+    
 fi
 clear
 echo
@@ -127,5 +131,6 @@ echo "${green}${bt} ~ Style Applied Successfully!"
 echo
 echo
 echo "${red}${bt} ~ Subscribe My YouTube Channel"
-echo "${red}${bt} ~ Channel Link: https://tiny.cc/ShadowYT"
+echo "${red}${bt} ~ Channel Name: Shadow Walker"
+xdg-open https://youtube.com/ShadowWalkerYT
 echo
