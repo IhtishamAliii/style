@@ -110,10 +110,10 @@ echo
 echo
 echo "${green}${bt}"
 read -p " ~ Enter Banner Name: ${yellow}${bt}" bname
-echo "${white}${bt} ~ Username: ${pink}${bt}$bname"
+echo "${white}${bt} ~ Banner Name: ${pink}${bt}$bname"
 echo "${green}${bt}"
 read -p " ~ Enter Username: ${yellow}${bt}" uname
-echo " ~ ${white}${bt}Banner Name:${pink}${bt}$uname"
+echo " ~ ${white}${bt}Username Name:${pink}${bt}$uname"
 echo																				
 echo
 echo
