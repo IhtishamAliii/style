@@ -38,7 +38,7 @@ echo
 pkg install figlet -y > /dev/null 2>&1
 echo " ${blue}${bt}[${white}+${blue}] ${green}Downloading Figlet Font"
 echo
-cp -r Bloody.flf $PREFIX/share/figlet
+cp -r $HOME/style/Bloody.flf $PREFIX/share/figlet
 sleep 2
 
 echo " ${blue}${bt}[${white}+${blue}] ${green}Installing Color-Scheme"
