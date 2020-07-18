@@ -10,6 +10,12 @@ pink=$(tput setaf 5)
 cyan=$(tput setaf 6)
 white=$(tput setaf 7)
 
+rbg=$(tput setab 1)
+wbg=$(tput setab 7)
+bbg=$(tput setab 4)
+cbg=$(tput setab 6)
+gbg=$(tput setab 2)
+
 bt=$(tput bold 2)
 #reset color
 
@@ -42,11 +48,11 @@ echo " ${blue}${bt}[${white}*${blue}] ${green}Setting Up Shadow Theme"
 echo
 sed -i "s/robbyrussell/shadowwalker/g" .zshrc 
 sleep 3
+echo "${cyan}${bt}"
+read -p " • Enter Banner Name:${green}${bt} " banner_name
+read -p " • Enter Username:${green}${bt} " user_name
 
-read -p " Enter Banner Name: " banner_name
-read -p " Enter Username: " user_name
-echo
-read -p " Hit Enter To Apply Settings..."
+
 
 sed -i "s/ihtisham/$user_name/g" $HOME/style/shadowwalker.zsh-theme
 sed -i "s/shadow/$banner_name/g" $HOME/style/shadowwalker.zsh-theme
@@ -54,5 +60,9 @@ sed -i "s/robbyrussell/shadowwalker/g" .zshrc
 cp -r $HOME/style/shadowwalker.zsh-theme $HOME/.oh-my-zsh/themes
 yes "zsh" | chsh > /dev/null 2>&1
 rm -rf $HOME/style
+echo "${white}${bt} ${rbg}SUBSCRIBE MY YOUTUBE CHANNEL${reset}"
+xdg-open https://youtube.com/ShadowWalkerYT
 echo
-echo " Please Restart Termux"
+echo "${green}${bt}"
+read -p " Hit Enter To Apply Settings..."
+echo "${reset}"
