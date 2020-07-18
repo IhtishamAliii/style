@@ -22,14 +22,14 @@ pkg install zsh -y
 pkg install figlet -y
 pkg install ncurses-utils -y
 curl -Lo install.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
-bash install.sh -y
+yes "n" | bash install.sh -y
 
-sed -i "s/robbyrussell/gnzh/g" .zshrc
+sed -i "s/robbyrussell/shadowwalker/g" .zshrc
 read -p " Enter Banner Name: " banner_name
 read -p " Enter Username: " user_name
 sed -i "s/ihtisham/$user_name/g" shadowwalker.zsh-theme
 sed -i "s/shadow/$banner_name/g" shadowwalker.zsh-theme
 sed -i "s/robbyrussell/shadowwalker/g" .zshrc
-mv shadowwalker.zsh-theme ~/.oh-my-zsh/themes
+cp -r shadowwalker.zsh-theme /data/data/com.termux/files/home/.oh-my-zsh/themes
 yes "zsh" | chsh
 echo "Please Restart Termux"
