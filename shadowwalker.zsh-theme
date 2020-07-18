@@ -8,7 +8,7 @@ local PR_USER PR_USER_OP PR_PROMPT PR_HOST
 
 # Check the UID
 if [[ $UID -ne 0 ]]; then # normal user
-  PR_USER='%B%F{red}❲Ihtisham❳'
+  PR_USER='%B%F{red}❲ihtisham❳'
   PR_USER_OP='%F{green}'
   PR_PROMPT='➤➤➤'
 else # root
@@ -33,7 +33,7 @@ local git_branch='$()'
 green=$(tput setaf 2)
 echo "${green}"
 clear
-figlet -f Bloody Shadow
+figlet -f Bloody shadow
 PROMPT="%B%F{cyan}┏━━━%f ${user_host} ${current_dir} \$(ruby_prompt_info) ${git_branch}
 %F{cyan}┗━$PR_PROMPT%f "
 RPROMPT="${return_code}"
