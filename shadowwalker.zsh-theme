@@ -33,7 +33,7 @@ local git_branch='$()'
 green=$(tput setaf 2)
 echo "${green}"
 clear
-figlet -w $(tput cols) -c shadow
+figlet -w $(tput cols) -f Bloody -c shadow
 PROMPT="%B%F{cyan}┏━━━%f ${user_host} ${current_dir} \$(ruby_prompt_info) ${git_branch}
 %F{cyan}┗━$PR_PROMPT%f "
 RPROMPT="${return_code}"
