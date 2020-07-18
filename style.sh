@@ -38,7 +38,7 @@ echo
 pkg install figlet -y > /dev/null 2>&1
 echo " ${blue}${bt}[${white}+${blue}] ${green}Downloading Figlet Font"
 echo
-git clone https://github.com/shadowwalker005/figlet-fonts
+git clone https://github.com/shadowwalker005/figlet-fonts > /dev/null 2>&1
 cd figlet-fonts
 cp -r * $PREFIX/share/figlet
 cd ..
