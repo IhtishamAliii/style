@@ -35,6 +35,10 @@ pkg install zsh -y > /dev/null 2>&1
 echo " ${blue}${bt}[${white}+${blue}] ${green}Installing Figlet"
 echo
 pkg install figlet -y > /dev/null 2>&1
+echo " ${blue}${bt}[${white}+${blue}] ${green}Downloading Figlet Font"
+echo
+cd $PREFIX/share/figlet && { curl -O https://github.com/xero/figlet-fonts/raw/master/Bloody.flf ; cd -; } > /dev/null 2>&1
+
 echo " ${blue}${bt}[${white}+${blue}] ${green}Installing Color-Scheme"
 echo
 pkg install ncurses-utils -y > /dev/null 2>&1
