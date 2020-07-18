@@ -48,9 +48,9 @@ echo " ${blue}${bt}[${white}*${blue}] ${green}Setting Up Shadow Theme"
 echo
 sed -i "s/robbyrussell/shadowwalker/g" .zshrc 
 sleep 3
-echo "${cyan}${bt}"
-read -p " • Enter Banner Name:${green}${bt} " banner_name
-read -p " • Enter Username:${green}${bt} " user_name
+echo
+read -p " • ${cyan}${bt}Enter Banner Name:${green}${bt} " banner_name
+read -p " • ${cyan}${bt}Enter Username:${green}${bt} " user_name
 
 
 
@@ -60,9 +60,12 @@ sed -i "s/robbyrussell/shadowwalker/g" .zshrc
 cp -r $HOME/style/shadowwalker.zsh-theme $HOME/.oh-my-zsh/themes
 yes "zsh" | chsh > /dev/null 2>&1
 rm -rf $HOME/style
+echo
+echo
 echo "${white}${bt} ${rbg}SUBSCRIBE MY YOUTUBE CHANNEL${reset}"
 xdg-open https://youtube.com/ShadowWalkerYT
 echo
 echo "${green}${bt}"
 read -p " Hit Enter To Apply Settings..."
 echo "${reset}"
+zsh
