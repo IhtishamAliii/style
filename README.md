@@ -1,20 +1,42 @@
-# style
-# Created By Ihtisham Ali - Shadow Walker
-# Youtube Channel: https://tiny.cc/ShadowYT
-# Facebook: https://facebook.com/ShadowWalkerYT
+## Style - For Termux
 
-This Script Will Make Your Terminal Colorful And Customize With Your Name
+**Make Your Termux Stylish**
 
+***Don't Copy Without Giving Me Credit! Script Kiddie xD***
 
-# Installation
+**Show Some Support By Subscribing My Channel** [SUBSCRIBE](https://youtube.com/ShadowWalkerYT)
 
-pkg update && pkg install git
-
-git clone https://github.com/shadowwalker005/style && cd style
-
-chmod 777 style && bash style.sh
+## Screenshot
+![Shadow](https://github.com/shadowwalker005/shadow/blob/master/Screenshot_2020-07-14-01-25-33.png)
 
 
-THAT'S ALL
 
-IF YOU ENJOYED, SUBSCRIBE MY YOUTUBE CHANNEL
+
+# INSTALLATION:
+
+> pkg update
+
+> pkg install git
+
+> git clone https://github.com/shadowwalker005/style
+
+> cd style && chmod 775 *
+
+> bash style.sh
+
+
+
+## Developed By:
+- Ihtisham Ali aka Shadow Walker
+## Links:
+- YouTube Channel: [Shadow Walker](https://youtube.com/ShadowWalkerYT)
+- Facebook: [S. Walker](https://facebook.com/ShadowWalkerYT)
+- Blogspot: [ShadowHub]( https://shadowhub.blogspot.com)
+
+
+
+**In Case Of Any Issues Please Feel Free To Contact Me**
+
+**Also Check Out My YouTube Channel:** [Shadow Walker](https://youtube.com/ShadowWalkerYT)
+
+
