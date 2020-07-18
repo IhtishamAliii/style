@@ -27,8 +27,8 @@ yes "n" | bash install.sh -y
 sed -i "s/robbyrussell/shadowwalker/g" .zshrc
 read -p " Enter Banner Name: " banner_name
 read -p " Enter Username: " user_name
-sed -i "s/ihtisham/$user_name/g" shadowwalker.zsh-theme
-sed -i "s/shadow/$banner_name/g" shadowwalker.zsh-theme
+sed -i "s/ihtisham/$user_name/g" $HOME/style/shadowwalker.zsh-theme
+sed -i "s/shadow/$banner_name/g" $HOME/style/shadowwalker.zsh-theme
 sed -i "s/robbyrussell/shadowwalker/g" .zshrc
 cp -r $HOME/style/shadowwalker.zsh-theme $HOME/.oh-my-zsh/themes
 yes "zsh" | chsh
