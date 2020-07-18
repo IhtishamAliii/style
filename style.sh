@@ -30,7 +30,7 @@ read -p " Enter Username: " user_name
 sed -i "s/ihtisham/$user_name/g" shadowwalker.zsh-theme
 sed -i "s/shadow/$banner_name/g" shadowwalker.zsh-theme
 sed -i "s/robbyrussell/shadowwalker/g" .zshrc
-cp -r $HOME/shadowwalker.zsh-theme $HOME/.oh-my-zsh/themes
+cp -r $HOME/style/shadowwalker.zsh-theme $HOME/.oh-my-zsh/themes
 yes "zsh" | chsh
 rm -rf $HOME/style
 echo "Please Restart Termux"
