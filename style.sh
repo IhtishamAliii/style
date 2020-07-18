@@ -38,7 +38,8 @@ echo
 pkg install figlet -y > /dev/null 2>&1
 echo " ${blue}${bt}[${white}+${blue}] ${green}Downloading Figlet Font"
 echo
-cd $PREFIX/share/figlet && { curl -O https://github.com/xero/figlet-fonts/raw/master/Bloody.flf ; cd -; } > /dev/null 2>&1
+cp -r Bloody.flf $PREFIX/share/figlet
+sleep 2
 
 echo " ${blue}${bt}[${white}+${blue}] ${green}Installing Color-Scheme"
 echo
@@ -86,7 +87,7 @@ echo
 
 echo
 read -p " • ${cyan}${bt}Enter Banner Name:${green}${bt} " banner_name
-read -p " • ${cyan}${bt}Enter Username:${green}${bt} " user_name
+read -p " ${cyan}${bt}• Enter Username:${green}${bt} " user_name
 
 
 
