@@ -23,7 +23,7 @@ reset=$(tput sgr0)
 
 
 cd
-rm -rf style > /dev/null 2>&1
+
 clear
 echo " ${blue}${bt}[${white}*${blue}] ${green}Installing Dependencies"
 echo
@@ -86,8 +86,8 @@ echo
 
 
 echo
-read -p " • ${cyan}${bt}Enter Banner Name:${green}${bt} " banner_name
-read -p " ${cyan}${bt}• Enter Username:${green}${bt} " user_name
+read -p " ${white}${bt}• ${cyan}${bt}Enter Banner Name:${green}${bt} " banner_name
+read -p " ${white}${bt}• ${cyan}${bt}Enter Username:${green}${bt} " user_name
 
 
 
