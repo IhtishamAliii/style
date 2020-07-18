@@ -52,6 +52,37 @@ echo " ${blue}${bt}[${white}*${blue}] ${green}Setting Up Shadow Theme"
 echo
 sed -i "s/robbyrussell/shadowwalker/g" .zshrc 
 sleep 3
+
+clear
+#banner for shadow
+
+
+echo "${red}░██████╗██╗░░██╗░█████╗░██████╗░░█████╗░░██╗░░░░░░░██╗"
+echo "${red}██╔════╝██║░░██║██╔══██╗██╔══██╗██╔══██╗░██║░░██╗░░██║"
+echo "${red}╚█████╗░███████║███████║██║░░██║██║░░██║░╚██╗████╗██╔╝"
+echo "${red}░╚═══██╗██╔══██║██╔══██║██║░░██║██║░░██║░░████╔═████║░"
+echo "${red}██████╔╝██║░░██║██║░░██║██████╔╝╚█████╔╝░░╚██╔╝░╚██╔╝░"
+echo "${red}╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░░╚════╝░░░░╚═╝░░░╚═╝░░"
+echo "     ${bt} ${blue}${wbg} Developed By Ihtisham Ali - Shadow Walker ${reset}"
+
+
+
+
+
+
+echo "${bt}"
+echo "${cyan}$bt • YouTube: ${yellow}https://youtube.com/ShadowWalkerYT"
+
+echo "${cyan} $bt• GitHub: ${yellow}https://github.com/ShadowWalker005"
+
+echo "${cyan} $bt• Facebook: ${yellow}https://facebook.com/ShadowWalkerYT"
+
+echo "${cyan}$bt • Blogspot: ${yellow}https://shadowhub.blogspot.com"
+echo "$reset"
+echo 
+
+
+
 echo
 read -p " • ${cyan}${bt}Enter Banner Name:${green}${bt} " banner_name
 read -p " • ${cyan}${bt}Enter Username:${green}${bt} " user_name
