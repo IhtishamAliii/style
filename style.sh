@@ -20,19 +20,19 @@ cd
 clear
 echo " ${blue}${bt}[${white}*${blue}] ${green}Installing Dependencies"
 echo
-echo " ${blue}${bt}[${white}*${blue}] ${green}Installing Curl"
+echo " ${blue}${bt}[${white}+${blue}] ${green}Installing Curl"
 echo
 pkg install curl -y > /dev/null 2>&1
-echo " ${blue}${bt}[${white}*${blue}] ${green}Installing Zsh"
+echo " ${blue}${bt}[${white}+${blue}] ${green}Installing Zsh"
 echo
 pkg install zsh -y > /dev/null 2>&1
-echo " ${blue}${bt}[${white}*${blue}] ${green}Installing Figlet"
+echo " ${blue}${bt}[${white}+${blue}] ${green}Installing Figlet"
 echo
 pkg install figlet -y > /dev/null 2>&1
-echo " ${blue}${bt}[${white}*${blue}] ${green}Installing Color-Scheme"
+echo " ${blue}${bt}[${white}+${blue}] ${green}Installing Color-Scheme"
 echo
 pkg install ncurses-utils -y > /dev/null 2>&1
-echo " ${blue}${bt}[${white}*${blue}] ${green}Installing Oh-My-Zsh"
+echo " ${blue}${bt}[${white}+${blue}] ${green}Installing Oh-My-Zsh"
 echo
 curl -Lo install.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh > /dev/null 2>&1
 echo " ${blue}${bt}[${white}*${blue}] ${green}Configuring Oh-My-Zsh"
