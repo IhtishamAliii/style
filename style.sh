@@ -22,25 +22,25 @@ echo " ${blue}${bt}[${white}*${blue}] ${green}Installing Dependencies"
 echo
 echo " ${blue}${bt}[${white}*${blue}] ${green}Installing Curl"
 echo
-pkg install curl -y
+pkg install curl -y > /dev/null 2>&1
 echo " ${blue}${bt}[${white}*${blue}] ${green}Installing Zsh"
 echo
-pkg install zsh -y
+pkg install zsh -y > /dev/null 2>&1
 echo " ${blue}${bt}[${white}*${blue}] ${green}Installing Figlet"
 echo
-pkg install figlet -y
+pkg install figlet -y > /dev/null 2>&1
 echo " ${blue}${bt}[${white}*${blue}] ${green}Installing Color-Scheme"
 echo
-pkg install ncurses-utils -y
+pkg install ncurses-utils -y > /dev/null 2>&1
 echo " ${blue}${bt}[${white}*${blue}] ${green}Installing Oh-My-Zsh"
 echo
-curl -Lo install.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+curl -Lo install.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh > /dev/null 2>&1
 echo " ${blue}${bt}[${white}*${blue}] ${green}Configuring Oh-My-Zsh"
 echo
-yes "n" | bash install.sh -y
+yes "n" | bash install.sh -y > /dev/null 2>&1
 echo " ${blue}${bt}[${white}*${blue}] ${green}Setting Up Shadow Theme"
 echo
-sed -i "s/robbyrussell/shadowwalker/g" .zshrc
+sed -i "s/robbyrussell/shadowwalker/g" .zshrc 
 sleep 3
 
 read -p " Enter Banner Name: " banner_name
@@ -52,7 +52,7 @@ sed -i "s/ihtisham/$user_name/g" $HOME/style/shadowwalker.zsh-theme
 sed -i "s/shadow/$banner_name/g" $HOME/style/shadowwalker.zsh-theme
 sed -i "s/robbyrussell/shadowwalker/g" .zshrc
 cp -r $HOME/style/shadowwalker.zsh-theme $HOME/.oh-my-zsh/themes
-yes "zsh" | chsh 
+yes "zsh" | chsh > /dev/null 2>&1
 rm -rf $HOME/style
 echo
 echo " Please Restart Termux"
