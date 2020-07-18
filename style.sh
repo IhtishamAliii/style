@@ -23,6 +23,7 @@ reset=$(tput sgr0)
 
 
 cd
+rm -rf style > /dev/null 2>&1
 clear
 echo " ${blue}${bt}[${white}*${blue}] ${green}Installing Dependencies"
 echo
