@@ -70,8 +70,8 @@ echo
 yes "n" | bash install.sh -y > /dev/null 2>&1
 echo " ${blue}${bt}[${white}*${blue}] ${green}Setting Up Shadow Theme"
 echo
-sed -i "s/robbyrussell/shadowwalker/g" .zshrc
-cp -r .dialogrc ~
+sed -i "s/robbyrussell/shadowwalker/g" $HOME/.zshrc
+cp -r $HOME/style/.dialogrc ~
 mkdir -p $HOME/.shadow_sounds
 cd && cd style
 cp -r wrong.wav welcome.mp3 $HOME/.shadow_sounds
