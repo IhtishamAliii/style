@@ -72,7 +72,7 @@ echo " ${blue}${bt}[${white}*${blue}] ${green}Setting Up Shadow Theme"
 echo
 sed -i "s/robbyrussell/shadowwalker/g" .zshrc
 cp -r .dialogrc ~
-mkdir $HOME/.shadow_sounds
+mkdir -p $HOME/.shadow_sounds
 cd && cd style
 cp -r wrong.wav welcome.mp3 $HOME/.shadow_sounds
 cd && cd style
@@ -117,7 +117,7 @@ read -p " ${white}${bt}• ${cyan}${bt}Enter Username:${green}${bt} " user_name
 
 sed -i "s/ihtisham/$user_name/g" $HOME/style/shadowwalker.zsh-theme
 sed -i "s/shadow/$banner_name/g" $HOME/style/shadowwalker.zsh-theme
-sed -i "s/robbyrussell/shadowwalker/g" .zshrc
+sed -i "s/robbyrussell/shadowwalker/g" $HOME/.zshrc
 cp -r $HOME/style/shadowwalker.zsh-theme $HOME/.oh-my-zsh/themes
 yes "zsh" | chsh > /dev/null 2>&1
 rm -rf $HOME/style
