@@ -73,6 +73,7 @@ echo
 sed -i "s/robbyrussell/shadowwalker/g" .zshrc
 cp -r .dialogrc ~
 mkdir $HOME/.shadow_sounds
+cd && cd style
 cp -r wrong.wav welcome.mp3 $HOME/.shadow_sounds
 cd && cd style
 cp -r iip t cwd cl password login_t $PREFIX/bin
