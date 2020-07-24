@@ -37,7 +37,8 @@ pkg install zsh -y > /dev/null 2>&1
 
 
 echo " ${blue}${bt}[${white}+${blue}] ${green}Installing Required Packages"
-echo " ${blue}${bt}[${white}+${blue}] ${green} This Will Take Some Minutes"
+echo
+echo " ${blue}${bt}[${white}+${blue}] ${green}This Will Take Some Minutes"
 echo
 pkg install mpv -y > /dev/null 2>&1
 echo "${blue}${bt}${green} ➤ Done"
