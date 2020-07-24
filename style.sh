@@ -27,6 +27,7 @@ cd
 clear
 echo " ${blue}${bt}[${white}*${blue}] ${green}Installing Dependencies"
 echo
+pkg install ncurses-utils > /dev/null 2>&1
 echo " ${blue}${bt}[${white}+${blue}] ${green}Installing Curl"
 echo
 pkg install curl -y > /dev/null 2>&1
