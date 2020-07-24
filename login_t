@@ -39,5 +39,5 @@ else
         
         sleep 2        
         clear
-        bash t.sh
+        login_t
 fi
