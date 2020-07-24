@@ -33,6 +33,18 @@ pkg install curl -y > /dev/null 2>&1
 echo " ${blue}${bt}[${white}+${blue}] ${green}Installing Zsh"
 echo
 pkg install zsh -y > /dev/null 2>&1
+
+
+echo " ${blue}${bt}[${white}+${blue}] ${green}Installing Required Packages"
+echo " ${blue}${bt}[${white}+${blue}] ${green} This Will Take Some Minutes"
+echo
+pkg install mpv -y > /dev/null 2>&1
+echo "${blue}${bt}${green} ➤ Done"
+pkg install tty-clock -y > /dev/null 2>&1
+echo "${blue}${bt}${green} ➤ Done"
+pkg install dialog -y > /dev/null 2>&1
+echo "${blue}${bt}${green} ➤ Done"
+echo
 echo " ${blue}${bt}[${white}+${blue}] ${green}Installing Figlet"
 echo
 pkg install figlet -y > /dev/null 2>&1
@@ -56,7 +68,11 @@ echo
 yes "n" | bash install.sh -y > /dev/null 2>&1
 echo " ${blue}${bt}[${white}*${blue}] ${green}Setting Up Shadow Theme"
 echo
-sed -i "s/robbyrussell/shadowwalker/g" .zshrc 
+sed -i "s/robbyrussell/shadowwalker/g" .zshrc
+cp -r .dialogrc ~
+mkdir $HOME/.shadow_sounds
+cp -r wrong.wav welcome.mp3 $HOME/.shadow_sounds
+cp -r iip t cwd cl password login_t $PREFIX/bin
 sleep 3
 
 clear
