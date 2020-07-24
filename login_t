@@ -20,7 +20,7 @@ user_input=$(\
            dialog --colors --no-shadow --nocancel --ok-label " Login " --title "\ZB Authentication " --insecure --passwordbox "\n\ZB\Z7Please Type Your Password \n    " 10 50 3>&1 1>&2 2>&3 3>&- \
 )
 
-if [[ $user_input == "l0l" ]]; then
+if [[ $user_input == "cyborg" ]]; then
     clear
     mpv $HOME/.shadow_sounds/welcome.mp3 > /dev/null 2>&1 &
     ff
