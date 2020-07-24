@@ -23,7 +23,7 @@ reset=$(tput sgr0)
 
 
 cd
-
+rm -rf .oh-my-zsh > /dev/null 2>&1
 clear
 echo " ${blue}${bt}[${white}*${blue}] ${green}Installing Dependencies"
 echo
@@ -120,13 +120,14 @@ sed -i "s/shadow/$banner_name/g" $HOME/style/shadowwalker.zsh-theme
 
 cp -r $HOME/style/shadowwalker.zsh-theme $HOME/.oh-my-zsh/themes
 yes "zsh" | chsh > /dev/null 2>&1
-rm -rf $HOME/style
+rm -rf $HOME/style > /dev/null 2>&1
+rm -rf $HOME/install.sh > /dev/null 2>&1
 echo
 echo
 echo "${white}${bt} ${rbg}SUBSCRIBE MY YOUTUBE CHANNEL${reset}"
 xdg-open https://youtube.com/ShadowWalkerYT
 echo
 echo "${green}${bt}"
-read -p " Hit Enter To Apply Settings..."
+read -p " Hit Enter To Apply Settings... "
 echo "${reset}"
 zsh
