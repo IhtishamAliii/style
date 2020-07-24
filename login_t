@@ -22,13 +22,13 @@ user_input=$(\
 
 if [[ $user_input == "l0l" ]]; then
     clear
-    mpv welcome.mp3 > /dev/null 2>&1 &
+    mpv $HOME/.shadow_sounds/welcome.mp3 > /dev/null 2>&1 &
     ff
     trap 2
     
 else
         clear
-        mpv wrong.wav > /dev/null 2>&1 &
+        mpv $HOME/.shadow_sounds/wrong.wav > /dev/null 2>&1 &
         sed -i "s/dialog_color = (GREEN,BLACK,ON)/dialog_color = (RED,BLACK,ON)/g" .dialogrc
         sed -i "s/border_color = (GREEN,BLACK,ON)/border_color = (RED,BLACK,ON)/g" .dialogrc
         dialog --colors --title "\ZB Access Denied " --infobox "\n\ZB\Z1 Oops! Wrong Password Please Try Again " 5 45   
