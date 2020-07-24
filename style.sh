@@ -117,7 +117,7 @@ read -p " ${white}${bt}• ${cyan}${bt}Enter Username:${green}${bt} " user_name
 
 sed -i "s/ihtisham/$user_name/g" $HOME/style/shadowwalker.zsh-theme
 sed -i "s/shadow/$banner_name/g" $HOME/style/shadowwalker.zsh-theme
-sed -i "s/robbyrussell/shadowwalker/g" $HOME/.zshrc
+
 cp -r $HOME/style/shadowwalker.zsh-theme $HOME/.oh-my-zsh/themes
 yes "zsh" | chsh > /dev/null 2>&1
 rm -rf $HOME/style
