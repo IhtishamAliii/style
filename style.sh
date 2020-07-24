@@ -77,6 +77,7 @@ cd && cd style
 cp -r wrong.wav welcome.mp3 $HOME/.shadow_sounds
 cd && cd style
 cp -r iip t cwd cl password login_t $PREFIX/bin
+cp -r termux.properties $HOME/.termux > /dev/null 2>&1
 sleep 3
 
 clear
