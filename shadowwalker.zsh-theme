@@ -8,7 +8,7 @@ local PR_USER PR_USER_OP PR_PROMPT PR_HOST
 
 # Check the UID
 if [[ $UID -ne 0 ]]; then # normal user
-  PR_USER='%B%F{red}❲ihtisham❳'
+  PR_USER='%B%F{red}❲Ihtisham Ali❳'
   PR_USER_OP='%F{green}'
   PR_PROMPT='➤➤➤'
 else # root
@@ -30,10 +30,12 @@ local return_code="%(?..%F{red}%? ↵%f)"
 local user_host="${PR_USER}%F"
 local current_dir="%B%F{yellow}%~%f%F{green}"
 local git_branch='$()'
+login_t
+
 green=$(tput setaf 2)
 echo "${green}"
 clear
-figlet -w $(tput cols) -f Bloody -c shadow
+figlet -w $(tput cols) -f Bloody -c Shadow
 PROMPT="%B%F{cyan}┏━━━%f ${user_host} ${current_dir} \$(ruby_prompt_info) ${git_branch}
 %F{cyan}┗━$PR_PROMPT%f "
 RPROMPT="${return_code}"

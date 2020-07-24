@@ -1,0 +1,21 @@
+#!/bin/bash
+
+inip() {
+    if ping -q -c 1 google.com &>/dev/null
+    then
+        info="Your Internal IP Address Is:"
+        in_avl=$(ifconfig | grep -o -P '(?<=inet).*(?=netmask)' | grep -v '127.0.0.1')
+        dialog --colors --title "\ZB IP Address " --screen-center --infobox "\n\ZB\Z2 $info \Z6$in_avl" 5 50
+    
+
+    else
+        
+        dialog --colors --title "\ZB IP Address " --screen-center --infobox "\n\\ZB\Z7You Have No \Z1Internet\Z7 Connection\n\n\Z7•\Z4\ZB Check Your Internet Connection \n\Z7• \Z4\ZBInternet Connection Maybe Slow \n\Z7•\Z4\ZB You Don't Have Data xD" 10 50
+    
+
+fi
+}
+inip
+
+
+    

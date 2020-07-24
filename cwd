@@ -1,0 +1,5 @@
+#!/bin/bash
+info=$(pwd)
+dialog --cr-wrap --colors --title "\ZB Current Working Directory " --screen-center --infobox "\n\ZB\Z2 $info " 10 50
+    
+

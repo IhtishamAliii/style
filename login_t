@@ -1,0 +1,43 @@
+#!/bin/bash
+
+
+
+trap '' 2
+trap '' 20
+ff() {
+    
+    for i in $(seq 0 20 100) ; 
+    do sleep 1.2; 
+        
+        echo $i | dialog --no-shadow --colors --gauge "\n\ZB Access Granted! \n\n\ZB Loading Please Wait... " 10 50 0;
+       
+    done
+}
+
+
+clear
+user_input=$(\
+           dialog --colors --no-shadow --nocancel --ok-label " Login " --title "\ZB Authentication " --insecure --passwordbox "\n\ZB\Z7Please Type Your Password \n    " 10 50 3>&1 1>&2 2>&3 3>&- \
+)
+
+if [[ $user_input == "l0l" ]]; then
+    clear
+    mpv welcome.mp3 > /dev/null 2>&1 &
+    ff
+    trap 2
+    
+else
+        clear
+        mpv wrong.wav > /dev/null 2>&1 &
+        sed -i "s/dialog_color = (GREEN,BLACK,ON)/dialog_color = (RED,BLACK,ON)/g" .dialogrc
+        sed -i "s/border_color = (GREEN,BLACK,ON)/border_color = (RED,BLACK,ON)/g" .dialogrc
+        dialog --colors --title "\ZB Access Denied " --infobox "\n\ZB\Z1 Oops! Wrong Password Please Try Again " 5 45   
+        sed -i "s/dialog_color = (RED,BLACK,ON)/dialog_color = (GREEN,BLACK,ON)/g" .dialogrc
+        sed -i "s/border_color = (RED,BLACK,ON)/border_color = (GREEN,BLACK,ON)/g" .dialogrc
+        
+        
+        
+        sleep 2        
+        clear
+        bash t.sh
+fi
